@@ -1,0 +1,18 @@
+.jumbotron{
+    color:rgb(247, 242, 242);
+background-color: rgb(53, 32, 238);
+}
+
+.footer{
+    
+    color:rgb(247, 242, 242);
+background-color: rgb(53, 32, 238);
+
+}
+a{
+    color : gold;
+}
+hr{
+    width:100%;
+    padding-bottom: 1.5em;
+}
