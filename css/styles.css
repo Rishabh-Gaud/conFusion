@@ -16,10 +16,10 @@ hr{
     padding-bottom: 2.5em;
 }
 .box2{
-    margin-bottom: 4em;
+    margin-bottom: 5em;
 }
 .box1{
-    margin-bottom: 4em;
+    margin-bottom: 5em;
 
 }
 
@@ -34,5 +34,7 @@ body{
 .navbar-dark {
      background-color: #2e2c30;
 }
-
+a{
+    color: rgb(32, 29, 29);
+}
 

@@ -40,8 +40,14 @@
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
                 <div class="col-12 col-sm-6">
-                    <div class="col-12 col-sm align-self-center">
-                        <img src="img/logo.png" class="img-fluid">
+                    <div class="row">
+
+                        <div class="col-6 col-sm-6 align-self-center">
+                            <img src="img/logo.png" class="img-fluid">
+                        </div>
+                        <div class="col-6 align-self-center">
+                            <button class="btn btn-warning  text-center "><a href="#submitionform">Reserve Table</a></button>
+                        </div>
                     </div>
 
                 </div>
@@ -53,14 +59,14 @@
         <div class="row">
         
            
-            <div class="col-sm-4" >
+            <div class="col-sm-2  order-sm-last" >
                 <h3>Our Lipsmacking Culinary Creations</h3>
              </div>
-               <div class="box1 col-sm-8">
+               <div class="box1 col-sm-10 order-sm-first">
                 <div class="media">
                     <img src="./img/uthappizza.png" alt="Uthappizza" class="d-flex mr-3 img-thumbnail align-self-center ">
                     <div class="media-body">
-                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span><span class="badge badge-pill badge-secondary">$4.99</span></h2>
+                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
                         <p > A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer .
                        </p>
                     </div>
@@ -75,15 +81,15 @@
 
         <div class="container ">
           <div class="row"> 
-               <div class="col-sm-4 order-sm-last" >
+               <div class="col-sm-2" >
                 <h3>This Month's Promotions</h3>
               </div>
-             <div class="box2 col-sm-8 order-sm-first">
+             <div class="box2 col-sm-10 ">
                  <div class="media">
-                     <img src="./img/buffet.png" alt="Weekend Grand Buffet" class="d-flex mr-3 img-thumbnail align-self-center">
-                     <div class="media-body">
+                     <img src="./img/buffet.png" alt="Weekend Grand Buffet" class="d-flex mr-3 img-thumbnail align-self-center order-sm-last">
+                     <div class="media-body order-sm-first">
 
-                        <h2 class="mt-0">Weekend Grand Buffet</h2>
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
                         <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
                         
                      </div>
@@ -94,10 +100,10 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-2  order-sm-last">
                     <h3>Meet our Culinary Specialists</h3>
                 </div>
-                <div class="col-sm-8">
+                <div class="col-sm-10 order-sm-first">
                     <div class="media">
                         <img src="./img/alberto.png" alt="Alberto Somayya" class="d-flex mr-3 img-thumbnail align-self-center">
                         <div class="media-body">
@@ -112,7 +118,62 @@
              
             </div>
         </div>
+        <div class=" col-sm-8 offset-sm-2">
+            <div class="card" id="submitionform">
+                <h3 class="card-header bg-warning text-white">Reserve A Table</h3>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-2">Number of Guests</dt>
+                        <dd class="col-sm-10 ">
+                            
+                            <form >
+                                               
+                            
+                                       <input class=" " id="seat1" type="radio" value="1" name="seat"><label for="seat1"> &nbsp;1 &nbsp;</label>
+                                       <input class=" " id="seat2" type="radio" value="2" name="seat"><label for="seat2"> 2 &nbsp;</label>
+                                       <input class=" " id="seat3" type="radio" value="3" name="seat"><label for="seat3" class=""></label> 3 &nbsp;</label>
+                                       <input class=" " id="seat4" type="radio" value="4" name="seat"><label for="seat4"> 4 &nbsp;</label>
+                                       <input class=" " id="seat5" type="radio" value="5" name="seat"><label for="seat5"> 5 &nbsp;</label>
+                                       <input class=" " id="seat6" type="radio" value="6" name="seat"><label for="seat6"> 6 </label>
+                        
+                            </form>
+                      </dd>
+                      <dt class="col-sm-2 mt-5"><strong>Date</strong> and <strong>Time</strong></dt>
+                      <dl class="col-sm-10" >
+                          <form action="">
+                            <div class=" container-fluid form-group row mt-5 ">
+                                <label for="date" class="col-sm-0 col-form-label"></label>
+                                <div class="col-md-5">
+                                    <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                                </div>
+                            
+                                <label for="time" class="col-md-2 col-form-label"></label>
+                                <div class="col-md-5">
+                                    <input type="text" class="form-control" id="time" name="time" placeholder="Time">
+                                </div>
+                            </div>
+                            <dt class="col-sm-2">&nbsp;</dt>
+                            <dl class="col-sm-10">
+                                <button type="submit" class="btn btn-primary">Reserve</button>
+                            </dl>
+                            
+                            
+                          
+                          </form>
+                      </dl>
+                    </dl>        
+                            
+    
+    
+                        
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-sm-2"></div>
     </div>
+
 
     <footer class="footer">
         <div class="container">
