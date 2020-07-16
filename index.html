@@ -11,6 +11,8 @@
 </head>
 
 <body>
+<!-- navigation start -->
+
 
     <nav class="navbar navbar-dark navbar-expand-sm  fixed-top">
         
@@ -37,7 +39,16 @@
     </nav>
 
 
-    <div id="loginModal" class="modal fade" role="dialog">
+
+<!-- navigation end -->
+    
+
+
+
+<!-- login form start -->
+
+
+<div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <!-- Modal content-->
             <div class="modal-content">
@@ -73,6 +84,10 @@
             </div>
         </div>
     </div>
+    
+    <!-- login form end -->
+
+
 <!-- table reservation start -->
 
 <div id="tablesreservation" class="modal fade" role="dialog">
@@ -210,13 +225,18 @@
                         <li data-target="#mycarousel" data-slide-to="2"></li>
                     </ol>
                 </div>
+                <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+                <div class="btn-group" id="carouselButton">
+                    <button  class="btn btn-danger btn-sm" id="carousel-pause" ><span class="fa fa-pause"></span></button>
+                    <button  class="btn btn-danger btn-sm" id="carousel-play" ><span class="fa fa-play"></span></button>
+                </div>
             </div>
-            <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
+           
          </div>
     </div>
 
@@ -390,11 +410,23 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
     <script>
         $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();
+            $("#mycarousel").carousel({interval:1000});
+            $('#carousel-pause').click(function(){
+                $('#mycarousel').carousel('pause');
+            });
+            $('#carousel-play').click(function(){
+                $('#mycarousel').carousel('cycle');
+            });
         });
+        
+        
+    
     </script>
+
+
 </body>
 
 </html>
