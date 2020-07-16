@@ -1,0 +1,65 @@
+.jumbotron{
+    color:rgb(247, 242, 242);
+background-color: rgb(122, 96, 96);
+}
+
+.footer{
+    
+    color:rgb(247, 242, 242);
+background-color: rgb(122, 96, 96);
+}
+a{
+    color : gold;
+}
+hr{
+    width:100%;
+    padding-bottom: 2.5em;
+}
+.box2{
+    margin-bottom: 5em;
+}
+.box1{
+    margin-bottom: 5em;
+
+}
+
+h3{
+    color: rgb(78, 76, 76);
+}
+body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
+}
+
+.navbar-dark {
+     background-color: #2e2c30;
+}
+a{
+    color: rgb(32, 29, 29);
+}
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.carousel {
+    background:#512DA8;
+}
+
+.carousel-item {
+  height: 300px;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+#carouselButton {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}
